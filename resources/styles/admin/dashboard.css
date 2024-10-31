@@ -1,0 +1,212 @@
+h1.no-bg-page-title {
+  margin-top: 30px;
+}
+
+.notice.update-nag {
+  display: none;
+}
+
+.no-bg-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.no-bg-primary {
+  margin-top: 20px;
+}
+
+.no-bg-dash-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-bg-preview-container {
+  margin: 20px 0 30px;
+}
+
+.no-bg-frames-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.no-bg-preview-frame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.no-bg-preview-frame img {
+  max-width: 100%;
+}
+
+/* Message boxes
+ ========================== */
+
+.no-bg-card {
+  margin: 0 0 20px;
+  border-bottom: 4px solid #236EBF;
+  border-radius: 5px;
+}
+
+.no-bg-intro-request {
+  max-width: 1000px;
+}
+
+.no-bg-card ul {
+  font-size: 14px;
+}
+
+.no-bg-error {
+  border-bottom-color: #d63638;
+}
+
+.no-bg-info-notice {
+  max-width: 800px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.no-bg-status-box {
+  display: none;
+}
+
+.pending .no-bg-status-box,
+.processing .no-bg-status-box {
+  display: block;
+}
+
+.no-bg-color-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.no-bg-color-picker-container {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  border: 4px solid #bebebe;
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: linear-gradient(45deg, #c3c4c7 25%, transparent 25%, transparent 75%, #c3c4c7 75%, #c3c4c7), linear-gradient(45deg, #c3c4c7 25%, transparent 25%, transparent 75%, #c3c4c7 75%, #c3c4c7);
+  background-position: 0 0, 5px 5px;
+  background-size: 10px 10px;
+}
+
+.no-bg-color-picker {
+  height: 100%;
+}
+
+/* Before frame
+ ========================== */
+.pending .no-bg-before-frame .no-bg-overlay,
+.processing .no-bg-before-frame .no-bg-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#03A9F4, #03A9F4),
+  linear-gradient(90deg, #ffffff33 1px, transparent 0, transparent 19px),
+  linear-gradient(#ffffff33 1px, transparent 0, transparent 19px),
+  linear-gradient(transparent, #2196f387);
+  background-size: 100% 1.5%, 10% 100%, 100% 10%, 100% 100%;
+  background-repeat: no-repeat, repeat, repeat, no-repeat;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 1.5%, 0% 1.5%);
+  animation: no-bg-scanning 2s infinite linear;
+}
+
+@keyframes no-bg-scanning {
+  to {
+    background-position: 0 100%, 0 0, 0 0, 0 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+/* After frame
+ ========================== */
+
+.no-bg-after-frame {
+  display: none;
+}
+
+.completed .no-bg-after-frame {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, #c3c4c7 25%, transparent 25%, transparent 75%, #c3c4c7 75%, #c3c4c7), linear-gradient(45deg, #c3c4c7 25%, transparent 25%, transparent 75%, #c3c4c7 75%, #c3c4c7);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+}
+
+.processing .no-bg-after-frame,
+.completed .no-bg-after-frame {
+  display: flex;
+}
+
+.no-bg-after-frame img {
+  display: none;
+}
+
+.completed .no-bg-after-frame img {
+  display: block;
+}
+
+.no-bg-preview-message {
+  font-size: 17px;
+  max-width: 80%;
+  line-height: 1.4;
+  padding: 11px 15px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.completed .no-bg-preview-message {
+  display: none;
+}
+
+/* Buttons container
+ ========================== */
+
+.no-bg-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.no-bg-download-btn {
+  display: none !important;
+}
+
+.no-bg-view-in-library-btn {
+  text-decoration: underline;
+  display: none;
+}
+
+.no-bg-view-in-library-btn .dashicons {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.completed .no-bg-preview-btn {
+  display: none;
+}
+
+.downloaded .no-bg-view-in-library-btn,
+.completed .no-bg-download-btn {
+  display: block !important;
+}
+
+
+
+

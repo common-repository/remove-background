@@ -1,0 +1,58 @@
+{
+    "version": "0.9.1",
+    "type": "wordpress-plugin",
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "remove background"
+    ],
+    "license": "GPL-2.0-only",
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.4",
+        "averta/wpemerge-app-core": "^0.18.0",
+        "averta/wpemerge": "*",
+        "averta/wordpress": "^1.2",
+        "averta/core": "^1.2",
+        "ext-simplexml": "*",
+        "ext-zip": "*"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^2.0",
+        "coenjacobs/mozart": "^0.7.1",
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "NoBg\\": "app/src/",
+            "NoBg\\Psr\\": "vendor-prefixed/Psr",
+            "NoBg\\GuzzleHttp\\": "vendor-prefixed/GuzzleHttp"
+        }
+    },
+    "scripts": {
+        "mozart": "vendor/bin/mozart compose"
+    },
+    "extra": {
+      "mozart": {
+        "dep_namespace": "NoBg\\",
+        "dep_directory": "/vendor-prefixed/",
+        "classmap_directory": "/src",
+        "classmap_prefix": "NoBg_",
+        "packages": [
+          "guzzlehttp/guzzle"
+        ],
+        "excluded_packages": [],
+        "override_autoload": {},
+        "delete_vendor_directories": false
+      }
+    },
+    "config": {
+        "platform": {
+          "php": "7.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

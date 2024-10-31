@@ -1,0 +1,123 @@
+
+.no-bg-remove-bg-button{
+  color:#9a4fa4 !important;
+  border-color:#9a4fa4 !important;
+  margin-bottom:5px !important;
+  box-shadow: 0 0 10px 0 #932da22b;
+}
+
+.no-bg-remove-bg-button:hover{
+  background-color: #fff !important;
+}
+.no-bg-remove-bg-button .eicon-ai{
+  margin:0 7px 0 0;
+}
+
+/*====================*/
+
+.no-bg-banner-wrapper.updated {
+  margin-left:0;
+  border:none;
+  padding:0;
+  clear:both;
+  position:relative;
+}
+.no-bg-banner-wrapper.updated > p {
+  padding:15px;
+}
+.no-bg-banner-wrapper .no-bg-banner-media {
+  display:block;
+  text-align:center;
+  width:100%;
+}
+.no-bg-banner-wrapper .no-bg-banner-media > * {
+  margin-left:auto;
+  margin-right:auto;
+}
+.no-bg-banner-wrapper.updated .notice-dismiss{
+  padding:7px;
+  top:7px;
+}
+.no-bg-banner-wrapper > pre {
+  outline: 1px solid #e2e2e2;
+  padding: 15px;
+  margin: 0;
+}
+.no-bg-rate {
+  padding: 30px 43px;
+}
+
+.no-bg-notice-image {
+  float: left;
+  margin-right: 30px;
+}
+.rate-btn {
+  position: relative;
+  padding: 9px 23px 11px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: 2px solid #3D3D3D;
+  border-radius: 100em;
+  display: inline-block;
+}
+.no-bg-rate .rate-btn button{
+  position: relative;
+  border: none;
+  background-color: transparent;
+  color: #3D3D3D;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0;
+  outline: none;
+  transition: color 450ms cubic-bezier(0.75, 0.1, 0.25, 0.9);
+}
+
+.no-bg-rate h3{
+  font-size:1.25rem;
+  margin-top:5px;
+}
+
+.no-bg-rate .no-bg-notice-message{
+  max-width:1220px;
+  font-size:14px;
+}
+
+.no-bg-notice{
+  display:flex;
+}
+
+.rate-btn:not(.skip-btn) {
+  background-color: #2C87FF;
+  color: #fff;
+  border-color: #2C87FF;
+}
+.rate-btn:not(.skip-btn) button {
+  color: #fff;
+}
+.rate-btn.skip-btn:hover button {
+  color: #fff;
+}
+.rate-btn .no-bg-overlay {
+  position: absolute;
+  width: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0, 0);
+  transition: transform 450ms cubic-bezier(0.75, 0.1, 0.25, 0.9);
+}
+.rate-btn .no-bg-overlay:after {
+  position: relative;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  padding-top: 100%;
+  background-color: #3D3D3D;
+}
+.rate-btn:not(.skip-btn) .no-bg-overlay:after {
+  background-color: #2C87FF;
+}
+.rate-btn:hover .no-bg-overlay {
+  transform: translate(-50%, -50%) scale(1, 1);
+}
